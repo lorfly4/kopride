@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>Login Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #20c997;
+        font-family: Arial, sans-serif;
+      }
+      .login-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        padding: 20px;
+        text-align: center;
+      }
+      .login-header {
+        background-color: #17a2b8;
+        color: white;
+        padding: 15px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 1.5em;
+      }
+      .input-group {
+        margin: 15px 0;
+        position: relative;
+      }
+      .input-group input {
+        width: 100%;
+        padding: 10px 10px 10px 40px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+      .input-group .input-icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        color: #17a2b8;
+      }
+      .forgot-password {
+        display: block;
+        margin: 10px 0;
+        color: #6c757d;
+        text-decoration: none;
+        font-size: 0.9em;
+      }
+      .login-button {
+        background-color: #17a2b8;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 1em;
+        cursor: pointer;
+      }
+      .signup-link {
+        margin-top: 15px;
+        font-size: 0.9em;
+      }
+      .signup-link a {
+        color: #17a2b8;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/login" method="POST">
+      <div class="login-container">
+        <div class="login-header">Login Form</div>
+        <div class="input-group">
+          <i class="fas fa-user input-icon"></i>
+          <input type="text" placeholder="nama" name="nama" />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock input-icon"></i>
+          <input type="password" placeholder="Password" name="password" />
+        </div>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <button class="login-button">Login</button>
+        <div class="signup-link">
+          Not a member? <a href="/daftar">Signup now</a>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
